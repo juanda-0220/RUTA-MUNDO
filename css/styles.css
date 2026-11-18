@@ -1,0 +1,258 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #243746;
+            background-color: #f5f7f8;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #0a273a;
+            color: white;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            padding: 18px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav h2 {
+            color: #ffffff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 16px;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        .encabezado {
+            min-height: 420px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .imagen-portada {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+        }
+
+        .capa {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(10, 39, 58, .90), rgba(10, 39, 58, .25));
+            top: 0;
+            left: 0;
+        }
+
+        .texto-portada {
+            position: relative;
+            max-width: 1100px;
+            width: 100%;
+            margin: auto;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .texto-portada h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .texto-portada p {
+            max-width: 550px;
+            font-size: 18px;
+            margin-bottom: 22px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #f4a261;
+            color: #142d3b;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .boton:hover {
+            background-color: #e9914c;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 48px 20px;
+        }
+
+        section h2 {
+            color: #0a273a;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .introduccion {
+            margin-bottom: 22px;
+            color: #52636e;
+        }
+
+        .filtros {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #cbd5da;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        .filtros input {
+            max-width: 320px;
+        }
+
+        .filtros select {
+            max-width: 220px;
+        }
+
+        .destinos, .paquetes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            border-radius: 9px;
+            overflow: hidden;
+            box-shadow: 0 2px 9px rgba(0, 0, 0, .08);
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .contenido-tarjeta {
+            padding: 16px;
+        }
+
+        .contenido-tarjeta h3 {
+            color: #0a273a;
+            margin-bottom: 6px;
+        }
+
+        .precio {
+            color: #087e75;
+            font-weight: bold;
+            margin: 9px 0;
+        }
+
+        .promocion {
+            background-color: #e8f3f1;
+            border-left: 5px solid #087e75;
+            padding: 22px;
+            border-radius: 7px;
+        }
+
+        .promocion h3 {
+            color: #075e58;
+            margin-bottom: 6px;
+        }
+
+        .formulario {
+            background-color: white;
+            padding: 22px;
+            border-radius: 9px;
+            box-shadow: 0 2px 9px rgba(0, 0, 0, .08);
+            max-width: 700px;
+        }
+
+        .campo {
+            margin-bottom: 14px;
+        }
+
+        .campo label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .resultado {
+            margin-top: 15px;
+            padding: 12px;
+            background-color: #e8f3f1;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .contacto {
+            background-color: #eaf0f3;
+            max-width: none;
+        }
+
+        .contacto-contenido {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        footer {
+            background-color: #0a273a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 800px) {
+            .destinos, .paquetes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .texto-portada h1 {
+                font-size: 34px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .destinos, .paquetes {
+                grid-template-columns: 1fr;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 0 7px;
+            }
+            .texto-portada h1 {
+                font-size: 29px;
+            }
+        }

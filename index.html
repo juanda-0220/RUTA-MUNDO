@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta Mundo | Agencia de viajes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>Ruta Mundo</h2>
+            <div>
+                <a href="#inicio">Inicio</a>
+                <a href="#destinos">Destinos</a>
+                <a href="#paquetes">Paquetes</a>
+                <a href="#reservas">Reservas</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="encabezado" id="inicio">
+            <img class="imagen-portada" src="imagenes/INICIO.jpg" alt="INICIO PAISAJE">
+            <div class="capa"></div>
+            <div class="texto-portada">
+                <h1>Descubre tu próximo destino</h1>
+                <p>Con Ruta Mundo puedes conocer nuevos lugares y encontrar paquetes para disfrutar tus vacaciones.</p>
+                <a class="boton" href="#destinos">Explorar destinos</a>
+            </div>
+        </div>
+
+        <section id="destinos">
+            <h2>Destinos turísticos</h2>
+            <p class="introduccion">Conoce algunos de los lugares que puedes visitar con Ruta Mundo.</p>
+
+            <div class="filtros">
+                <input type="text" id="buscar" placeholder="Buscar destino...">
+                <select id="region">
+                    <option value="todos">Todas las regiones</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="América">América</option>
+                    <option value="Europa">Europa</option>
+                    <option value="Asia">Asia</option>
+                </select>
+            </div>
+
+            <div class="destinos" id="listaDestinos">
+
+    <article class="tarjeta destino" data-nombre="Cartagena" data-region="Colombia">
+        <img src="imagenes/cartagena.jpg" alt="Cartagena">
+        <div class="contenido-tarjeta">
+            <h3>Cartagena</h3>
+            <p>Playas, historia y calles llenas de color.</p>
+        </div>
+    </article>
+
+    <article class="tarjeta destino" data-nombre="San Andrés" data-region="Colombia">
+        <img src="imagenes/san andres.jpg" alt="San Andrés">
+        <div class="contenido-tarjeta">
+            <h3>San Andrés</h3>
+            <p>Mar de siete colores y descanso junto al mar.</p>
+        </div>
+    </article>
+
+    <article class="tarjeta destino" data-nombre="Medellín" data-region="Colombia">
+        <img src="imagenes/madellin.jpg" alt="Medellín">
+        <div class="contenido-tarjeta">
+            <h3>Medellín</h3>
+            <p>Cultura, gastronomía y paisajes urbanos.</p>
+        </div>
+    </article>
+
+    <article class="tarjeta destino" data-nombre="Santa Marta" data-region="Colombia">
+        <img src="imagenes/santa marta.jpg" alt="Santa Marta">
+        <div class="contenido-tarjeta">
+            <h3>Santa Marta</h3>
+            <p>Naturaleza, playas y aventura.</p>
+        </div>
+    </article>
+
+    <article class="tarjeta destino" data-nombre="Ciudad de México" data-region="América">
+        <img src="imagenes/ciudad de mexico.jpg" alt="Ciudad de México">
+        <div class="contenido-tarjeta">
+            <h3>Ciudad de México</h3>
+            <p>Historia, museos y deliciosa gastronomía.</p>
+        </div>
+    </article>
+
+    <article class="tarjeta destino" data-nombre="Río de Janeiro" data-region="América">
+        <img src="imagenes/rio.jpg" alt="Río de Janeiro">
+        <div class="contenido-tarjeta">
+            <h3>Río de Janeiro</h3>
+            <p>Montañas, playas y ambiente alegre.</p>
+        </div>
+    </article>
+
+    <article class="tarjeta destino" data-nombre="París" data-region="Europa">
+        <img src="imagenes/paris.jpg" alt="París">
+        <div class="contenido-tarjeta">
+            <h3>París</h3>
+            <p>Arte, arquitectura y lugares emblemáticos.</p>
+        </div>
+    </article>
+
+    <article class="tarjeta destino" data-nombre="Tokio" data-region="Asia">
+        <img src="imagenes/tokio.jpg" alt="Tokio">
+        <div class="contenido-tarjeta">
+            <h3>Tokio</h3>
+            <p>Tradición, tecnología y cultura japonesa.</p>
+        </div>
+    </article>
+
+</div>
+
+        <section id="paquetes">
+            <h2>Paquetes turísticos</h2>
+            <p class="introduccion">Elige el paquete que más se adapte a tu viaje. Precios de ejemplo por persona.</p>
+
+            <div class="paquetes">
+                <article class="tarjeta">
+                    <div class="contenido-tarjeta">
+                        <h3>Paquete Descanso</h3>
+                        <p>Incluye hospedaje por 3 noches, desayuno y transporte local.</p>
+                        <p class="precio">$850.000 COP</p>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="contenido-tarjeta">
+                        <h3>Paquete Aventura</h3>
+                        <p>Incluye hospedaje por 4 noches, desayuno y una actividad guiada.</p>
+                        <p class="precio">$1.200.000 COP</p>
+                        <p><strong>Promoción: 10% de descuento.</strong></p>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="contenido-tarjeta">
+                        <h3>Paquete Familiar</h3>
+                        <p>Incluye hospedaje por 5 noches, desayuno y actividad familiar.</p>
+                        <p class="precio">$1.500.000 COP</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div class="promocion">
+                <h3>Promoción especial</h3>
+                <p>Reserva el Paquete Aventura y recibe un 10% de descuento sobre su precio de ejemplo.</p>
+            </div>
+        </section>
+
+        <section id="reservas">
+            <h2>Formulario de reserva</h2>
+            <p class="introduccion">Completa los datos para calcular el valor estimado de tu viaje. Esta es una reserva simulada.</p>
+
+            <form class="formulario" id="formReserva">
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" required>
+                </div>
+                <div class="campo">
+                    <label for="destino">Destino</label>
+                    <select id="destino" required>
+                        <option value="">Selecciona un destino</option>
+                        <option>Cartagena</option>
+                        <option>San Andrés</option>
+                        <option>Medellín</option>
+                        <option>Santa Marta</option>
+                        <option>Ciudad de México</option>
+                        <option>Río de Janeiro</option>
+                        <option>París</option>
+                        <option>Tokio</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="paquete">Paquete</label>
+                    <select id="paquete" required>
+                        <option value="">Selecciona un paquete</option>
+                        <option value="850000">Descanso - $850.000</option>
+                        <option value="1080000">Aventura - $1.080.000 (con descuento)</option>
+                        <option value="1500000">Familiar - $1.500.000</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="personas">Número de viajeros</label>
+                    <input type="number" id="personas" min="1" max="10" value="1" required>
+                </div>
+                <button class="boton" type="submit">Calcular reserva</button>
+                <div class="resultado" id="resultado"></div>
+            </form>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="contacto-contenido">
+                <h2>Contacto</h2>
+                <p class="introduccion">Estamos disponibles para resolver tus dudas.</p>
+                <p><strong>Correo:</strong> contacto@rutamundo.com</p>
+                <p><strong>Teléfono:</strong> 300 000 0000</p>
+                <p><strong>Dirección:</strong> Bogotá, Colombia</p>
+                <p style="margin-top:10px;">Datos de contacto de demostración para el proyecto académico.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
